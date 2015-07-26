@@ -1,5 +1,12 @@
 set -e
 
+VERSION=(`phpenv version`)
+
+if [${VERSION[0]} != "7.0.0"] then
+	echo "aboring installation... not running with 7.0.0"
+	exit 0
+fi
+
 wget http://php.kelunik.com/$1.tar.xz -q -O release.tar.xz
 echo "download successful"
 
