@@ -1,0 +1,20 @@
+language: php
+sudo: false
+
+php:
+- 7
+
+env:
+- RELEASE=7.0.0alpha1
+- RELEASE=7.0.0alpha2
+- RELEASE=7.0.0beta1
+- RELEASE=7.0.0beta2
+
+before_script:
+- git clone https://github.com/kelunik/travis-php && travis-php/install.sh $RELEASE
+
+script:
+- php -v
+
+notifications:
+  email: false
