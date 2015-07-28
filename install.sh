@@ -4,7 +4,7 @@ VERSION=(`phpenv version`)
 
 if [[ ${VERSION[0]} != "7.0.0" && ${VERSION[0]} != "7.0" && ${VERSION[0]} != "7" ]]
 then
-	echo "aboring installation... not running with 7.0.0"
+	echo "aborting installation... not running with 7.0.0"
 	exit 0
 fi
 
