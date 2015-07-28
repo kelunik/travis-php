@@ -23,3 +23,4 @@ mv $1 $HOME/.phpenv/versions/$1
 echo "installed version to phpenv directory"
 
 phpenv global $1
+ln -s $HOME/.phpenv/versions/$1/bin/phpdbg $HOME/.phpenv/bin/phpdbg
