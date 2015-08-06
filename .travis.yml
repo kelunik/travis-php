@@ -9,6 +9,7 @@ env:
 - RELEASE=7.0.0alpha2
 - RELEASE=7.0.0beta1
 - RELEASE=7.0.0beta2
+- RELEASE=7.0.0beta3
 - RELEASE=master
 
 before_script:
