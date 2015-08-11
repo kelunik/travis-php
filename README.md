@@ -8,7 +8,7 @@ This little repository helps testing on Travis CI with actual release version ra
 language: php
 php:
   - 5.6
-  - 7
+  - 7.0
 before_script:
   - git clone https://github.com/kelunik/travis-php && travis-php/install.sh $RELEASE
 script:
@@ -16,7 +16,7 @@ script:
 ```
 
 This will run your normal setup, but use the specified PHP pre-release build for the PHP 7 run.
-Substitute `$RELEASE` by a version like `7.0.0alpha1` or `7.0.0beta2`.
+Substitute `$RELEASE` by a version like `7.0.0alpha1` or `7.0.0beta2` or `latest` to always get the newest pre-release (releast, not `master`). Using a current master is also available, just use `master`, however, keep in mind that you still have to use `7` or `7.0` instead of `nightly` in your `.travis.yml` PHP release list.
 
 ## Builds
 
