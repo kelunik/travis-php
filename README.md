@@ -16,7 +16,7 @@ script:
 ```
 
 This will run your normal setup, but use the specified PHP pre-release build for the PHP 7 run.
-Substitute `$RELEASE` by a version like `7.0.0alpha1` or `7.0.0beta2` or `latest` to always get the newest pre-release (releast, not `master`). Using a current master is also available, just use `master`, however, keep in mind that you still have to use `7` or `7.0` instead of `nightly` in your `.travis.yml` PHP release list.
+Substitute `$RELEASE` by a version like `7.0.0alpha1` or `7.0.0beta2` or `latest` to always get the newest pre-release. Using a current master is also available, just use `master`. However, keep in mind that you still have to use `7` or `7.0` instead of `nightly` in your `.travis.yml` PHP release list.
 
 ## Builds
 
